@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "WebMQTT", "WebMQTT.pyproj", "{02E4C503-27EF-4F10-86B6-49CFC2C9A43B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E4C503-27EF-4F10-86B6-49CFC2C9A43B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E4C503-27EF-4F10-86B6-49CFC2C9A43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E4C503-27EF-4F10-86B6-49CFC2C9A43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E4C503-27EF-4F10-86B6-49CFC2C9A43B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F9F12F8-8B72-4747-A358-B24D6C8E15E7}
+	EndGlobalSection
+EndGlobal

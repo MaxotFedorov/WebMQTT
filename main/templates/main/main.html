@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <title>TITLE</title>
+		<link rel="stylesheet" href="{% static 'css/styles.css'%}">
+		<script src="{% static 'js/scripts.js' %}"></script>
+    </head>
+    <body class='containerBody'>
+		<div class='containerLeftBar neumorphismDrop10px'>
+			<div>
+				<div align="right">
+					<p><button class="barIcons" style="background: url('{% static 'icons/home.svg' %}') 23px 23px no-repeat;" onclick="setMainPage()"></button></p>
+					<p><button class="barIcons" style="background: url('{% static 'icons/dashboard.svg' %}') 23px 23px no-repeat;" onclick="setDevicesPage()"></button></p>
+					<p><button class="barIcons" style="background: url('{% static 'icons/gear.png' %}') 23px 23px no-repeat;" onclick="setSettingsPage()"></button></p>
+					<p><button class="barIcons" onclick="toggleTheme()"></button></p>
+				</div>
+			</div>
+		
+		</div>
+		<div class='containerMain'>
+			<button class="element button mainPageElementEnable"></button>
+			<button class="element button mainPageElementEnable"></button>
+			<button class="element button devicesPageElementEnable"></button>
+			<button class="element button devicesPageElementEnable"></button>
+			<div class="element settingsPageElementEnable" style="height: 100px; width: 230px">
+				<div class="element" style="position: absolute; height: 70px; width: 70px; border-radius: 15px;">
+					<input type="color" value="#e0e0e0" onchange="changeMainColor()" id="main-color">
+				</div>				
+			</div>
+		</div>		
+		
+    </body>
+</html>
+

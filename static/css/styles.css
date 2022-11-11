@@ -1,0 +1,140 @@
+:root {
+    --visibilityMainPageElement: visible;
+    --visibilityDevicesPageElement: hidden;
+    --visibilitySettingsPageElement: hidden;
+}
+
+.containerBody {
+    transition: 0.2s all;
+    background: var(--color-primary);
+    style ="width: 100%; overflow:auto;
+    overflow: hidden;
+}
+
+.containerLeftBar {
+    transition: 0.2s all;
+    position: fixed;
+    top: 0;
+    left: -50px;
+    width: 135px;
+    height: 95%;
+    margin: 15px;
+    justify-content: right;
+    align-items: right;
+    background-color: --color-primary;
+    border-radius: 30px;
+}
+
+.containerMain {
+    position: fixed;
+    float: right;
+    top: 0;
+    left: 130px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    #background-color: #00ff00;
+}
+
+.element {
+    transition: 0.2s all;
+    transition: box-shadow 0.2s;
+    transition: background-color 200ms;
+    margin: 15px;
+    border-radius: 25px;
+    background-color: var(--color-primary);
+    box-shadow: 6px 6px 12px var(--color-neu-1), -6px -6px 12px var(--color-neu-2);
+}
+
+.barIcons {
+    transition: 0.2s all;
+    transition: background-color 200ms;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--color-primary);
+    box-shadow: 4px 4px 8px var(--color-neu-1), -4px -4px 8px var(--color-neu-2);
+}
+
+    .barIcons:hover {
+        #transform: scale(0.99);
+        transition: box-shadow 0.2s;
+        box-shadow: 2px 2px 4px var(--color-neu-1), -2px -2px 4px var(--color-neu-2);
+    }
+
+
+.mainPageElementEnable {
+    visibility: var(--visibilityMainPageElement);
+}
+
+.devicesPageElementEnable {
+    visibility: var(--visibilityDevicesPageElement);
+}
+
+.settingsPageElementEnable {
+    visibility: var(--visibilitySettingsPageElement);
+}
+
+.button {
+    transition: 0.2s all;
+    transition: background-color 200ms;
+    transition: box-shadow 0.2s;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: var(--color-primary);
+}
+
+.button:hover {
+    transform: scale(0.99);
+    box-shadow: 2px 2px 4px var(--color-neu-1), -2px -2px 4px var(--color-neu-2);
+}
+
+input[type="color"] {
+    border: none;
+    background: var(--color-primary);
+    border-radius: 50%;
+    overflow: hidden;
+    outline: none;
+    cursor: inherit;
+    height: 70px;
+    width: 70px;
+    opacity: 0;
+}
+
+.neumorphismDrop10px {
+    box-shadow: -10px -10px 20px var(--color-neu-1), 10px 10px 20px var(--color-neu-2);
+}
+
+.neumorphismInner10px {
+    box-shadow: inset -10px -10px 20px var(--color-neu-1), inset -10px -10px 20px var(--color-neu-2);
+}
+
+.neumorphismDrop2px {
+    box-shadow: 2px 2px 4px var(--color-neu-1), -2px -2px 4px var(--color-neu-2);
+}
+
+.neumorphismInner2px {
+    box-shadow: inset 2px 2px 4px var(--color-neu-1), inset -2px -2px 4px var(--color-neu-2);
+}
+
+.theme-light {
+    --color-primary: #e6eaed;
+    --color-secondary: #fbfbfe;
+    --color-neu-1: #c4c7c9;
+    --color-neu-2: #ffffff;
+}
+
+.theme-dark {
+    --color-primary: #3c4248;
+    --color-secondary: #2a2c2d;
+    --color-neu-1: #33383d;
+    --color-neu-2: #454c53;
+}
