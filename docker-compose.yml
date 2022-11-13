@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  django:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:     
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    ports:
+      - 80:8000
+
+  
